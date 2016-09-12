@@ -24,7 +24,7 @@ public class UserDao extends AbstractDao<User, Long> {
     public static class Properties {
         public final static Property Id = new Property(0, Long.class, "id", true, "_id");
         public final static Property Name = new Property(1, String.class, "name", false, "NAME");
-        public final static Property Age = new Property(2, int.class, "age", false, "AGE");
+        public final static Property Age = new Property(2, int.class, "age", false, "TestAge");
         public final static Property Index = new Property(3, int.class, "index", false, "INDEX");
     };
 
@@ -43,7 +43,7 @@ public class UserDao extends AbstractDao<User, Long> {
         db.execSQL("CREATE TABLE " + constraint + "\"USER\" (" + //
                 "\"_id\" INTEGER PRIMARY KEY AUTOINCREMENT ," + // 0: id
                 "\"NAME\" TEXT," + // 1: name
-                "\"AGE\" INTEGER NOT NULL ," + // 2: age
+                "\"TestAge\" INTEGER NOT NULL ," + // 2: age
                 "\"INDEX\" INTEGER NOT NULL );"); // 3: index
     }
 

@@ -3,6 +3,7 @@ package com.example.yan.greendaotest.bean;
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Generated;
+import org.greenrobot.greendao.annotation.Property;
 
 /**
  * Created by yan on 2016/9/12.
@@ -12,6 +13,7 @@ public class User {
     @Id(autoincrement = true)
     private Long id;
     private String name;
+    @Property(nameInDb = "TestAge")
     private int age;
     private int index;
 

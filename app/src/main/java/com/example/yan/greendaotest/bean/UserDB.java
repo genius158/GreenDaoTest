@@ -3,10 +3,6 @@ package com.example.yan.greendaotest.bean;
 import android.content.Context;
 
 import com.example.yan.greendaotest.DBManager;
-import com.example.yan.greendaotest.bean.DaoMaster;
-import com.example.yan.greendaotest.bean.DaoSession;
-import com.example.yan.greendaotest.bean.User;
-import com.example.yan.greendaotest.bean.UserDao;
 
 import org.greenrobot.greendao.query.QueryBuilder;
 
